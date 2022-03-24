@@ -1,6 +1,6 @@
-@import 'config';
-@import 'utilities';
-@import 'media';
+@import "config";
+@import "utilities";
+@import "media";
 
 // General Styles
 
@@ -17,7 +17,7 @@ body {
 h1 {
   font-size: 5rem;
   color: $medium-color;
-  font-family: 'Sora', Helvetica, sans-serif;
+  font-family: "Sora", Helvetica, sans-serif;
   padding-bottom: 5rem;
   padding-top: 5rem;
 }
@@ -25,37 +25,36 @@ h1 {
 h2 {
   font-size: 2.5rem;
   color: $light-color;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 h3 {
   font-size: 2rem;
   color: $light-color;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 h4 {
   font-size: 1.2rem;
   color: $light-color;
-  font-family: 'Sora', sans-serif;
-
+  font-family: "Sora", sans-serif;
 }
 
 ul {
   list-style-type: none;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  transition: ease-in-out .5s;
+  transition: ease-in-out 0.5s;
   color: $medium-color;
   padding-top: 5rem;
   padding-left: 5rem;
 
   li {
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
-  a{
+  a {
     text-decoration: none;
 
     &:hover {
@@ -68,8 +67,7 @@ ul {
 #about {
   .about-info {
     display: grid;
-    grid-template-areas:
-    'bioimage bio bio';
+    grid-template-areas: "bioimage bio bio";
     grid-gap: 1.2rem;
     padding-bottom: 70px;
   }
@@ -89,11 +87,10 @@ ul {
   .bio {
     grid-area: bio;
     text-align: center;
-    font-family: 'Sora', sans-serif;
+    font-family: "Sora", sans-serif;
     background-color: $main-color;
     border-left: 3px solid $light-color;
     color: $medium-color;
-    
   }
 }
 
@@ -102,7 +99,7 @@ ul {
   .section-title {
     padding-bottom: 25px;
   }
-  
+
   .progress {
     overflow: hidden;
     height: 20px;
@@ -123,7 +120,7 @@ ul {
 // About C
 #about-c {
   .about-logos p {
-    font-family: 'Sora', sans-serif;
+    font-family: "Sora", sans-serif;
     color: $medium-color;
   }
   .img {
@@ -139,20 +136,20 @@ ul {
   padding-top: 1.5rem;
   color: $light-color;
   font-size: 1.8rem;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   text-decoration: none;
 
- a:hover {
-  text-decoration: none;
-  font-family: 'Sora', sans-serif;
-  color: $medium-color;
- }
+  a:hover {
+    text-decoration: none;
+    font-family: "Sora", sans-serif;
+    color: $medium-color;
+  }
 }
 
 // Footer
 #main-footer {
   .footer-content {
-    font-family: 'Sora', sans-serif;
+    font-family: "Sora", sans-serif;
     display: flex;
     justify-content: space-between;
     height: 5rem;

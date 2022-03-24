@@ -50,36 +50,36 @@ body {
 h1 {
   font-size: 5rem;
   color: #62466B;
-  font-family: 'Sora', Helvetica, sans-serif;
+  font-family: "Sora", Helvetica, sans-serif;
   padding-bottom: 5rem;
   padding-top: 5rem; }
 
 h2 {
   font-size: 2.5rem;
   color: #FF3366;
-  font-family: 'Sora', sans-serif; }
+  font-family: "Sora", sans-serif; }
 
 h3 {
   font-size: 2rem;
   color: #FF3366;
-  font-family: 'Sora', sans-serif; }
+  font-family: "Sora", sans-serif; }
 
 h4 {
   font-size: 1.2rem;
   color: #FF3366;
-  font-family: 'Sora', sans-serif; }
+  font-family: "Sora", sans-serif; }
 
 ul {
   list-style-type: none;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  transition: ease-in-out .5s;
+  transition: ease-in-out 0.5s;
   color: #62466B;
   padding-top: 5rem;
   padding-left: 5rem; }
   ul li {
-    padding: .5rem; }
+    padding: 0.5rem; }
   ul a {
     text-decoration: none; }
     ul a:hover {
@@ -87,7 +87,7 @@ ul {
 
 #about .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio';
+  grid-template-areas: "bioimage bio bio";
   grid-gap: 1.2rem;
   padding-bottom: 70px; }
 
@@ -103,7 +103,7 @@ ul {
 #about .bio {
   grid-area: bio;
   text-align: center;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   background-color: #D1CDDC;
   border-left: 3px solid #FF3366;
   color: #62466B; }
@@ -125,7 +125,7 @@ ul {
     width: 100vw; }
 
 #about-c .about-logos p {
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   color: #62466B; }
 
 #about-c .img {
@@ -138,15 +138,15 @@ ul {
   padding-top: 1.5rem;
   color: #FF3366;
   font-size: 1.8rem;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   text-decoration: none; }
   .about-back a a:hover {
     text-decoration: none;
-    font-family: 'Sora', sans-serif;
+    font-family: "Sora", sans-serif;
     color: #62466B; }
 
 #main-footer .footer-content {
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   display: flex;
   justify-content: space-between;
   height: 5rem;
