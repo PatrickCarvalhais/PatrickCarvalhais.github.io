@@ -9,13 +9,28 @@
   padding: 0;
 }
 
+html,
 body {
-  min-height: 100vh;
+  height: 100%;
   background-color: $background-color;
 }
 
+.container {
+  min-height: 100%;
+}
+
+#header-home {
+  padding-left: 1.5rem;
+}
+
+.main {
+  overflow: auto;
+  padding-bottom: 100px;
+  padding-left: 1.5rem;
+  min-height: calc(100vh - 362px - 100px);
+}
 h1 {
-  font-size: 5rem;
+  font-size: 10rem;
   color: $medium-color;
   font-family: "Sora", Helvetica, sans-serif;
   padding-bottom: 5rem;
@@ -70,6 +85,7 @@ ul {
     grid-template-areas: "bioimage bio bio";
     grid-gap: 1.2rem;
     padding-bottom: 70px;
+    padding-right: 1.5rem;
   }
 
   // Grid Areas
@@ -115,13 +131,24 @@ ul {
       width: 100vw;
     }
   }
+
+  .about-classes {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 // About C
 #about-c {
-  .about-logos p {
+  .about-logos {
     font-family: "Sora", sans-serif;
     color: $medium-color;
+    padding-left: 1.5rem;
+    padding-top: 25px;
+  }
+
+  .about-logos h3 {
+    padding-bottom: 25px;
   }
   .img {
     max-height: 100%;
@@ -149,12 +176,13 @@ ul {
 // Footer
 #main-footer {
   .footer-content {
+    margin-top: -100px;
     font-family: "Sora", sans-serif;
     display: flex;
-    justify-content: space-between;
-    height: 5rem;
+    height: 100px;
     align-items: center;
-    position: absolute;
+    position: relative;
+    padding-left: 1.5rem;
   }
 
   .social .fab {
@@ -166,7 +194,7 @@ ul {
     line-height: 20px;
     text-align: center;
     padding: 0.5rem;
-
+    position: relative;
     &:hover {
       background-color: $light-color;
     }

@@ -1,19 +1,20 @@
-.container {
-  max-width: 1280px;
+/* $website-width: 1280px; */
+/*  .container {
+  min-height: 100%;
   padding: 0 1.5rem;
-  overflow: hidden; }
-
-.container-progress {
-  max-width: 1920px;
-  padding: 0 1.5rem;
-  overflow: hidden; }
-
-.container-about {
-  max-width: 1280px;
+  overflow: auto;
+} */
+/* .container-progress {
+  max-width: $container-progress;
   padding: 0 1.5rem;
   overflow: hidden;
-  margin: auto; }
-
+} */
+/* .container-about {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  overflow: hidden;
+  margin: auto;
+} */
 /* .bg {
   &-main {
     background: $main-color;
@@ -43,30 +44,43 @@
   margin: 0;
   padding: 0; }
 
+html,
 body {
-  min-height: 100vh;
+  height: 100%;
   background-color: #f2f2f2; }
 
+.container {
+  min-height: 100%; }
+
+#header-home {
+  padding-left: 1.5rem; }
+
+.main {
+  overflow: auto;
+  padding-bottom: 100px;
+  padding-left: 1.5rem;
+  min-height: calc(100vh - 362px - 100px); }
+
 h1 {
-  font-size: 5rem;
-  color: #62466B;
+  font-size: 10rem;
+  color: #62466b;
   font-family: "Sora", Helvetica, sans-serif;
   padding-bottom: 5rem;
   padding-top: 5rem; }
 
 h2 {
   font-size: 2.5rem;
-  color: #FF3366;
+  color: #ff3366;
   font-family: "Sora", sans-serif; }
 
 h3 {
   font-size: 2rem;
-  color: #FF3366;
+  color: #ff3366;
   font-family: "Sora", sans-serif; }
 
 h4 {
   font-size: 1.2rem;
-  color: #FF3366;
+  color: #ff3366;
   font-family: "Sora", sans-serif; }
 
 ul {
@@ -75,7 +89,7 @@ ul {
   font-size: 1.5rem;
   font-weight: bold;
   transition: ease-in-out 0.5s;
-  color: #62466B;
+  color: #62466b;
   padding-top: 5rem;
   padding-left: 5rem; }
   ul li {
@@ -83,13 +97,14 @@ ul {
   ul a {
     text-decoration: none; }
     ul a:hover {
-      color: #FF3366; }
+      color: #ff3366; }
 
 #about .about-info {
   display: grid;
   grid-template-areas: "bioimage bio bio";
   grid-gap: 1.2rem;
-  padding-bottom: 70px; }
+  padding-bottom: 70px;
+  padding-right: 1.5rem; }
 
 #about .bio-image {
   grid-area: bioimage;
@@ -98,15 +113,15 @@ ul {
   width: 300px; }
 
 #about .about-info h2 {
-  color: #FF3366; }
+  color: #ff3366; }
 
 #about .bio {
   grid-area: bio;
   text-align: center;
   font-family: "Sora", sans-serif;
-  background-color: #D1CDDC;
-  border-left: 3px solid #FF3366;
-  color: #62466B; }
+  background-color: #d1cddc;
+  border-left: 3px solid #ff3366;
+  color: #62466b; }
 
 #about-b .section-title {
   padding-bottom: 25px; }
@@ -114,19 +129,28 @@ ul {
 #about-b .progress {
   overflow: hidden;
   height: 20px;
-  background-color: #D1CDDC;
+  background-color: #d1cddc;
   border-radius: 5px;
   margin-bottom: 0.6rem; }
   #about-b .progress div {
     height: 100%;
     color: black;
     text-align: center;
-    background-color: #45364B;
+    background-color: #45364b;
     width: 100vw; }
 
-#about-c .about-logos p {
+#about-b .about-classes {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+
+#about-c .about-logos {
   font-family: "Sora", sans-serif;
-  color: #62466B; }
+  color: #62466b;
+  padding-left: 1.5rem;
+  padding-top: 25px; }
+
+#about-c .about-logos h3 {
+  padding-bottom: 25px; }
 
 #about-c .img {
   max-height: 100%;
@@ -136,31 +160,33 @@ ul {
 .about-back a {
   padding-left: 1.5rem;
   padding-top: 1.5rem;
-  color: #FF3366;
+  color: #ff3366;
   font-size: 1.8rem;
   font-family: "Sora", sans-serif;
   text-decoration: none; }
   .about-back a a:hover {
     text-decoration: none;
     font-family: "Sora", sans-serif;
-    color: #62466B; }
+    color: #62466b; }
 
 #main-footer .footer-content {
+  margin-top: -100px;
   font-family: "Sora", sans-serif;
   display: flex;
-  justify-content: space-between;
-  height: 5rem;
+  height: 100px;
   align-items: center;
-  position: absolute; }
+  position: relative;
+  padding-left: 1.5rem; }
 
 #main-footer .social .fab {
   margin-left: 1rem;
-  border: 2px #FF3366 solid;
+  border: 2px #ff3366 solid;
   border-radius: 50%;
   height: 20px;
   width: 20px;
   line-height: 20px;
   text-align: center;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  position: relative; }
   #main-footer .social .fab:hover {
-    background-color: #FF3366; }
+    background-color: #ff3366; }
