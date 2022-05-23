@@ -81,6 +81,24 @@ img {
   width: 100%;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--medium-color-2);
+}
+
+a:active {
+  text-decoration: none;
+}
+
 /* About A */
 
 .about-info {
@@ -249,7 +267,7 @@ img {
   position: fixed;
 }
 
-a:hover {
+.back-button a:hover {
   text-decoration: none;
   font-family: "Sora", sans-serif;
   color: var(--dark-color);
