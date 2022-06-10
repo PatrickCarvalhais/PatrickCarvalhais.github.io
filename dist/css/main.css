@@ -248,10 +248,55 @@ a:active {
 
 /* Contact */
 
-#contact h1 {
-  font-size: 4rem;
+#contact p {
+  font-size: 1.2rem;
   color: var(--light-color);
   font-family: "Sora", Helvetica, sans-serif;
+  padding-bottom: 1.5rem;
+}
+
+#contact .form-group {
+  margin-bottom: 20px;
+  font-family: "Sora", sans-serif;
+  color: var(--dark-color);
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+  /* max-width: 1000px; */
+  width: 96.5%;
+  padding: 10px;
+  border: 1px var(--dark-color) solid;
+  /* padding-right: 1.5rem; */
+}
+
+#contact textarea {
+  height: 200px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: var(--light-color);
+}
+
+#contact {
+  overflow: auto;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: var(--dark-color);
+  background: var(--light-color);
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
 }
 
 /* Botão Voltar */
